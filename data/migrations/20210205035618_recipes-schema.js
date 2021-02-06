@@ -3,6 +3,7 @@ exports.up = function (knex) {
     .createTable("recipes", (tbl) => {
       tbl.increments();
       tbl.string("recipe_name").unique().notNullable();
+      tbl.string("recipe_description", 2000);
     })
     .createTable("ingredients", (tbl) => {
       tbl.increments();

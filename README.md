@@ -18,11 +18,11 @@ Design the **data model** for a _recipe book_ application, then use `Knex migrat
 
 The requirements for the system, as stated by the client are:
 
-- have a way to manage recipes.
-- have a way to manage ingredients.
-- a **recipe** could have more than one **ingredient** and the same **ingredient** can be used in multiple recipes. Examples are _"cup of corn flour"_ or _"gram of butter"_.
-- when saving the ingredients for a **recipe** capture the quantity required for that **ingredient** as a floating number.
-- have a way to save step by step instructions for preparing a recipe.
+- [x] have a way to manage recipes.
+- [x] have a way to manage ingredients.
+- [x] a **recipe** could have more than one **ingredient** and the same **ingredient** can be used in multiple recipes. Examples are _"cup of corn flour"_ or _"gram of butter"_.
+- [x] when saving the ingredients for a **recipe** capture the quantity required for that **ingredient** as a floating number.
+- [x] have a way to save step by step instructions for preparing a recipe.
 
 **Hint**: Before writing any code, write out all desired tables in the data model and determine all relationships between tables.
 
@@ -35,9 +35,9 @@ The requirements for the system, as stated by the client are:
 
 In addition to the `migrations` and `seeding` scripts, write a data access file that **exports** an object with the following functions:
 
-- `getRecipes()`: should return a list of all recipes in the database.
-- `getShoppingList(recipe_id)`: should return a list of all ingredients and quantities for a given recipe
-- `getInstructions(recipe_id)`: should return a list of step by step instructions for preparing a recipe
+- [x] `getRecipes()`: should return a list of all recipes in the database.
+- [x] `getShoppingList(recipe_id)`: should return a list of all ingredients and quantities for a given recipe
+- [x] `getInstructions(recipe_id)`: should return a list of step by step instructions for preparing a recipe
 
 Organize and name your files anyway you see fit.
 
@@ -45,13 +45,13 @@ Organize and name your files anyway you see fit.
 
 Build the following endpoints. Write any additional data access helpers as needed.
 
-- `GET /api/recipes/`: all recipes (without details about ingredients or steps)
-- `GET /api/recipes/:id/shoppingList`: a list of ingredients and quantites for a single recipe
-- `GET /api/recipes/:id/instructions`: a correctly ordered list of how to prepare a single recipe
-- `GET /api/ingredients/:id/recipes`: all recipes in the system that utilize a single ingredient
+- [x] `GET /api/recipes/`: all recipes (without details about ingredients or steps)
+- [x] `GET /api/recipes/:id/shoppingList`: a list of ingredients and quantites for a single recipe
+- [x] `GET /api/recipes/:id/instructions`: a correctly ordered list of how to prepare a single recipe
+- [x] `GET /api/ingredients/:id/recipes`: all recipes in the system that utilize a single ingredient
 
 ## Submission format
 
 Follow these steps for completing your project.
 
-- [ ] Submit a pull request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
+- [x] Submit a pull request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
